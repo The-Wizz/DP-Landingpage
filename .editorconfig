@@ -14,7 +14,6 @@ trim_trailing_whitespace = true
 
 [*.html]
 indent_size = 4
-max_line_length = 80
 
 # Minified JavaScript files shouldn't be changed
 [**.min.js]
@@ -23,3 +22,6 @@ insert_final_newline = ignore
 
 [*.md]
 trim_trailing_whitespace = false
+
+[nginx.conf]
+indent_size = 4

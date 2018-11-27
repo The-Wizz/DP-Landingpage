@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  frontend:
+    image: registry.gitlab.com/frusch/docker-nginx:50d6136ec1959ab713ea8c774d80c49174b87564
+    volumes:
+      - ./.data/frontend/nginx-ssl:/etc/nginx/ssl
+      - ./src:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 443:443
